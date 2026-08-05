@@ -1,0 +1,19 @@
+PART 1: Uniform B field
+
+Speed conservation: |v| ranges 1.118034 to 1.118034 (relative drift 5.34e-09)
+Gyroradius: theory r_L = v_perp/omega_c = 1.000000, numeric (from x-extent) = 1.000000
+Cyclotron period: theory T_c = 2*pi*m/(qB0) = 6.283185, numeric (from vy zero-crossings) = 6.283185, rel. error = 8.12e-09
+
+PART 2: Uniform E + B fields -> E x B drift
+
+Theory drift velocity (E x B)/B^2 = [0.2 0.  0. ]
+Numeric drift velocity (time-averaged v) = [0.19995001 0.00024993 0.        ]
+Absolute error: 2.55e-04
+
+PART 3: Magnetic mirror / magnetic bottle
+
+Total speed conservation: min=1.044031, max=1.044031
+Adiabatic invariant mu = v_perp^2/(2B): mean=0.506250, std=0.008950, relative fluctuation=1.77e-02
+Predicted mirror (turning) point: z_turn = 1.5000
+Numeric max |z| reached: 1.3861
+Particle reflected (vz changed sign): True
