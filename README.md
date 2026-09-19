@@ -1,6 +1,6 @@
 # Charged Particle in EM Fields
 
-Part of an ongoing computational physics journal. Builds directly on the hand-written RK4 integrator from Stage 1 (numerical ODE solver project), no `scipy.integrate` or other library integrator is used here.
+This is a part of an ongoing computational physics journal, and builds directly on the hand-written RK4 integrator from Stage 1 (numerical ODE solver project), no `scipy.integrate` or other library integrator is used here.
 
 ## Overview
 
@@ -65,8 +65,3 @@ Expected: the perpendicular adiabatic invariant `mu = v_perp^2 / (2B)` is approx
 
 - `charged_particle.py` — full implementation: RK4 integrator, all three field configurations, verification checks, and plot generation
 - `uniform_B.png`, `ExB_drift.png`, `magnetic_mirror.png` — trajectory and diagnostic plots for each part
-
-## Notes / next steps
-
-- Part 3's field is a simplified bottle, not a true dipole — a natural extension is to switch to a proper magnetic dipole field (`B ~ 1/r^3` falloff) as a simplified Van Allen belt model, which introduces the additional adiabatic invariants (bounce and drift) beyond the magnetic moment used here.
-- Shrinking `dt` in Part 3 should visibly reduce the `mu` fluctuation a useful demonstration that the residual is discretization error, not a physics error.
